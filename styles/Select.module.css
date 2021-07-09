@@ -1,0 +1,251 @@
+.container {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	margin-top: 20px;
+	padding: 0;
+	max-width: 30rem;
+}
+
+.text {
+	margin: 0;
+}
+
+.btn,
+.input_btn {
+	cursor: pointer;
+	overflow: hidden;
+	padding: 0 10px;
+	height: 50px;
+	width: 100%;
+	background-color: var(--main-color);
+	color: var(--back-color);
+	border: none;
+	border-radius: 30px;
+	font-weight: 900;
+	font-size: 1rem;
+	text-align: center;
+}
+.btn:hover,
+.input_btn:hover {
+	background-color: var(--main-color-lighter);
+}
+.btn {
+	font-size: 1.1rem;
+}
+
+.input_text {
+	flex-grow: 1;
+	margin: 0 10px 0 0;
+	padding: 10px 10px;
+	background: none;
+	border: 3px solid var(--main-color);
+	border-radius: 30px;
+	color: white;
+	text-align: center;
+	font-size: 1rem;
+}
+
+.name_entry_container :nth-child(1) {
+	width: 70%;
+}
+.name_entry_container :nth-child(2) {
+	width: 30%;
+}
+
+.players {
+	flex-direction: column;
+}
+.player_item {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0 20px;
+	height: 50px;
+	background-color: var(--middle-color);
+	border-radius: 30px;
+	list-style: none;
+}
+.name {
+	flex: 1;
+	min-width: 0;
+	font-size: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.gender {
+	display: flex;
+}
+.gender input {
+	display: none;
+}
+.gender label {
+	cursor: pointer;
+	display: flex;
+	margin-right: 0.3em;
+	width: 32px;
+	height: 32px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-family: monospace;
+	font-size: 30px;
+	box-sizing: border-box;
+}
+.gender label svg {
+	width: 65%;
+	height: 65%;
+}
+.gender input:checked + label{
+	background-color: var(--main-color);
+	fill: black;
+}
+
+.btn_remove {
+	display: flex;
+	height: 32px;
+	width: 32px;
+	overflow: hidden;
+	background: none;
+	border: none;
+	border-radius: 50%;
+}
+.btn_remove:hover {
+	background-color: var(--error-color);
+	fill: black;
+	cursor: pointer;
+}
+.btn_remove svg {
+	margin: auto;
+	height: 12px;
+	width: 12px;
+}
+
+.form_options {
+	flex-direction: column;
+}
+.form_options p {
+	margin: 0;
+	margin-bottom: 5px;
+	color: var(--main-color);
+	font-size: 1.2rem;
+}
+
+.radio {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.radio input {
+	display: none;
+}
+.radio label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	overflow: hidden;
+	padding: 0 10px;
+	height: 4.5rem;
+	width: 100%;
+	border: 3px solid var(--main-color);
+	color: var(--main-color);
+	font-size: 1rem;
+	text-align: center;
+}
+.radio label:first-of-type {
+	border-radius: 50px 0 0 50px;
+}
+.radio label:not(:first-of-type, :last-of-type) {
+	border-left: none;
+	border-right: none;
+}
+.radio label:last-of-type {
+	border-radius: 0 50px 50px 0;
+}
+.radio input:checked + label {
+	background-color: var(--main-color);
+	color: var(--back-color);
+}
+
+.checkbox {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 25px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.checkbox input {
+	display: none;
+}
+.checkbox label {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	width: 100%;
+	background-color: var(--middle-color);
+	border-radius: 1.75rem;
+	color: var(--font-color);
+	font-size: 1rem;
+	text-align: center;
+}
+.checkbox label > div {
+	display: flex;
+	flex-direction: column;
+}
+.checkbox label div span {
+	font-size: 1.25rem;
+}
+.checkbox label div span:first-child {
+	font-size: 3rem;
+}
+.checkbox label::before {
+	content: '';
+	display: table;
+	padding-top: 100%;
+}
+.checkbox label::after {
+	content: '+';
+	position: absolute;
+    top: -15px;
+    right: -15px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+	background-color: var(--back-color);
+	border: 4px solid var(--middle-color);
+	border-radius: 50%;
+	color: var(--middle-color);
+	font-weight: 900;
+	font-size: 1.75rem;
+	font-family: monospace;
+}
+.checkbox input:checked + label {
+	background-color: var(--main-color);
+	color: var(--back-color);
+}
+.checkbox input:checked + label::after {
+	content: '✓';
+	border-color: var(--main-color);
+	color: var(--main-color);
+}
+
+@media (max-width: 800px) {
+	.checkbox {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (min-width: 400px) and (max-width: 800px) {
+	.checkbox label div span:first-child {
+		font-size: 4rem;
+	}
+}

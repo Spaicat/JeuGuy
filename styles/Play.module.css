@@ -1,0 +1,63 @@
+.container {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.main {
+	margin: 0;
+}
+.main span {
+	font-size: min(max(22px, 5vw), 40px);;
+	text-align: center;
+}
+
+.barContainer {
+	width: 100%;
+}
+.bar {
+	margin: 5px;
+	background-color: #2E2E2E;
+	border-radius: 30px;
+}
+.barValue {
+	width: 0%;
+	height: 30px;
+	background-color: var(--main-color);
+	border-radius: 50px;
+	transition: all .5s;
+}
+
+.quitBtn {
+	position: absolute;
+	z-index: 999;
+	top: 2em;
+	right: 2em;
+	width: 3em;
+	height: 3em;
+}
+.quitBtn:before, .quitBtn:after {
+	content: ' ';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 8px;
+	height: 100%;
+	background-color: var(--main-color);
+	border-radius: 30px;
+}
+.quitBtn:before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+.quitBtn:after {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+.quitBtn:hover:after, .quitBtn:hover:before {
+	background-color: var(--main-color-lighter);
+}
