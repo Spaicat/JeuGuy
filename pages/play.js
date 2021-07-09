@@ -303,21 +303,16 @@ function Play() {
 
 		setBarLength(getLengthBar(sentences.length));
 		setText(sentences[0].text);
+
+		const handleEventClick = (event) => {
+			handleClick(event, sentences)
+		};
 		
-		document.addEventListener("click", (e) => handleClick(e, sentences));
-
-        /*let nRandomSentences = Math.floor(Math.random()*data.length);
-		setText(data[nRandomSentences].text);*/
-
-		// TODO : (idée en ts => Faire reducer et interface pour les phrases du json : https://youtu.be/Z5iWr6Srsj8?t=918)
-		// (Faire des fonctions (en dehors du composants pour que ça soit clean (juste au dessus là)))
-		// - Filtrer le json data pour ne prendre que les phrases qui respectent les options (thèmes...)
-		// - Faire le tableau de phrases (une certaine longueur en fonction de la longueur en option)
-		// - Remplacer les noms dans les phrases (tirer les noms au hasard tout ça tout ça)
-		// - Mettre les virus quelque part
-		// - Mettre la conséquence juste après pour les choix
-		//
-		// - Pour les choix, ce sera dans le jeu de remplacer le nom des détails donc pas dans cette fonction
+		document.addEventListener("click", handleEventClick);
+		
+		return () => {
+			document.removeEventListener("click", handleEventClick);
+		};
 	}, []);
 
 	return (
