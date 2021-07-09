@@ -1,0 +1,20 @@
+{
+  "select\\options.js -> ../../components/select/CheckboxSelect": {
+    "id": 1445,
+    "files": [
+      "static/chunks/445.c2c6c8c02305272ac061.js"
+    ]
+  },
+  "select\\options.js -> ../../components/select/RadioSelect": {
+    "id": 1965,
+    "files": [
+      "static/chunks/965.67f0bb7683c4d343b6ad.js"
+    ]
+  },
+  "select\\players.js -> ../../components/select/NameItem": {
+    "id": 6284,
+    "files": [
+      "static/chunks/284.a81054715d25c0387898.js"
+    ]
+  }
+}
