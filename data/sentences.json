@@ -1180,5 +1180,59 @@
 		"theme": "normal",
 		"type": "normal",
 		"details": ""
+	},
+	{
+		"text": "Ceux qui se sont rasé/épilé le pubis il y a moins de 3 semaines boivent [g1]",
+		"theme": "normal",
+		"type": "normal",
+		"details": ""
+	},
+	{
+		"text": "[nom], cite, dans l'ordre, tous les présidents de la 5ème république, 1 gorgée à chaque erreur.",
+		"theme": "normal",
+		"type": "normal",
+		"details": ""
+	},
+	{
+		"text": "[nom], met toi debout et touche le sol avec tes mains (jambes tendues), si tu n'y arrive pas, boit [g1].",
+		"theme": "sport",
+		"type": "normal",
+		"details": ""
+	},
+	{
+		"text": "[nom], lit nous la dernière note (dans l'application dédiée) dans ton téléphone, en cas de refus c'est [g2].",
+		"theme": "normal",
+		"type": "normal",
+		"details": ""
+	},
+	{
+		"text": "[nom], qui finira le plus bourré selon toi ?",
+		"theme": "normal",
+		"type": "normal",
+		"details": ""
+	},
+	{
+		"text": "[nom], parmi les célibataires, qui sera en couple le plus rapidement selon toi ?",
+		"theme": "normal",
+		"type": "normal",
+		"details": ""
+	},
+	{
+		"text": "[nom], si tu es capable de faire le grand écart tu peux distribuer [g3].",
+		"theme": "sport",
+		"type": "normal",
+		"details": ""
+	},
+	{
+		"text": "Team froid ou team chaud ? Votez tous en même temps, les personnes minoritaires boivent chacune [g1].",
+		"theme": "normal",
+		"type": "normal",
+		"details": ""
+	},
+	{
+		"text": "Team été ou team hiver ? Votez tous en même temps, les personnes minoritaires boivent chacune [g1].",
+		"theme": "normal",
+		"type": "normal",
+		"details": ""
 	}
 ]
